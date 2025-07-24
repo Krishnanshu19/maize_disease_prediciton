@@ -33,7 +33,14 @@ function ImageUpload() {
       const { prediction, confidence, solutions } = response.data;
       setPrediction(prediction);
       setConfidence(confidence);
+<<<<<<< HEAD
       setSolutions(solutions);
+=======
+      // console.log("logging solutions")
+      console.log(solutions.solutions);
+      
+      setSolutions(solutions.solutions);
+>>>>>>> 8fd3178 (Initial commit)
     } catch (error) {
       console.error("Error uploading image:", error);
     } finally {
