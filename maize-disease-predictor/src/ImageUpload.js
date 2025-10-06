@@ -33,14 +33,15 @@ function ImageUpload() {
       const { prediction, confidence, solutions } = response.data;
       setPrediction(prediction);
       setConfidence(confidence);
-<<<<<<< HEAD
-      setSolutions(solutions);
-=======
-      // console.log("logging solutions")
-      console.log(solutions.solutions);
-      
-      setSolutions(solutions.solutions);
->>>>>>> 8fd3178 (Initial commit)
+
+      // Safely handle solutions whether it's an array or an object with a solutions property
+      if (Array.isArray(solutions)) {
+        setSolutions(solutions);
+      } else if (solutions && Array.isArray(solutions.solutions)) {
+        setSolutions(solutions.solutions);
+      } else {
+        setSolutions([]);
+      }
     } catch (error) {
       console.error("Error uploading image:", error);
     } finally {
@@ -75,10 +76,16 @@ function ImageUpload() {
       <h1>Maize Disease Prediction</h1>
 
       <input type="file" accept="image/*" onChange={handleFileChange} />
-      {imagePreview && <img src={imagePreview} alt="Preview" style={{ width: "200px", margin: "10px 0" }} />}
+      {imagePreview && (
+        <img
+          src={imagePreview}
+          alt="Preview"
+          style={{ width: "200px", margin: "10px 0" }}
+        />
+      )}
 
       <button onClick={handleSubmit} disabled={loading}>
-        {loading ? 'Predicting...' : 'Submit Image for Prediction'}
+        {loading ? "Predicting..." : "Submit Image for Prediction"}
       </button>
 
       {prediction && (
@@ -114,3 +121,4 @@ function ImageUpload() {
 }
 
 export default ImageUpload;
+ 
