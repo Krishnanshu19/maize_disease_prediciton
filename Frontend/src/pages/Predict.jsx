@@ -12,8 +12,8 @@ import { motion } from "framer-motion";
 
 function Predict() {
   const steps = [
-    { id: 1, title: "Capture Image", description: "Upload a clear photo of maize leaf (avoid blurry or dark images).", icon: <Camera className="text-green-600 w-8 h-8" /> },
-    { id: 2, title: "Upload the Image(s)", description: "Use the image uploader to submit maize leaf photos.", icon: <UploadIcon className="text-yellow-600 w-8 h-8" /> },
+    { id: 1, title: "Capture Image", description: "Upload a clear photo of  leaf (avoid blurry or dark images).", icon: <Camera className="text-green-600 w-8 h-8" /> },
+    { id: 2, title: "Upload the Image(s)", description: "Use the image uploader to submit  leaf photos.", icon: <UploadIcon className="text-yellow-600 w-8 h-8" /> },
     { id: 3, title: "View Prediction", description: "See the predicted disease and its confidence score.", icon: <NotebookPen className="text-blue-600 w-8 h-8" /> },
     { id: 4, title: "Get Suggestions", description: "Receive recommended remedies and treatment options.", icon: <Lightbulb className="text-orange-500 w-8 h-8" /> },
     { id: 5, title: "Need Help?", description: "Use the chatbot in the corner for any questions.", icon: <BotMessageSquare className="text-purple-600 w-8 h-8" /> },
@@ -110,7 +110,7 @@ function Predict() {
         variants={fadeUp}
       >
         <h1 className="text-5xl font-extrabold text-center text-green-700 drop-shadow-md">
-          🌽 Maize Disease Diagnosis
+          🌽  Disease Diagnosis
         </h1>
         <p className="text-lg opacity-80 text-center text-green-900 max-w-2xl">
           Follow the steps below to upload images and get instant disease predictions with remedies.
@@ -157,7 +157,7 @@ function Predict() {
         >
           <div className="text-green-700 flex flex-col items-center gap-2">
             <CloudDownload className="w-10 h-10" />
-            <span>Drag & drop maize leaf images here or click to browse</span>
+            <span>Drag & drop  leaf images here or click to browse</span>
           </div>
           <input
             id="file-input"
