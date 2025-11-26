@@ -9,7 +9,7 @@ function HeaderFile() {
     <div className="sticky top-0 w-full flex flex-row justify-between items-center px-12 min-h-[10vh] bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 shadow-md">
       {/* Logo */}
       <div>
-        <h1 className="sm:text-2xl text-lg font-bold text-white">🌽 MaizeGuard</h1>
+        <h1 className="sm:text-2xl text-lg font-bold text-white">🌽 FarmDoctor</h1>
       </div>
 
       <div className="flex flex-row justify-between sm:gap-12">

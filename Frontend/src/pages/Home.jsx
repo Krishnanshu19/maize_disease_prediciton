@@ -22,10 +22,10 @@ function Home() {
         variants={fadeUp}
       >
         <h1 className="text-5xl font-extrabold text-green-700 drop-shadow-md md:w-[90vh] w-[70vh] text-center">
-          Diagnose Maize Disease with AI
+          Diagnose Plant Diseases with AI
         </h1>
         <p className="text-lg opacity-80 max-w-[80vh] text-center text-green-800">
-          Detect diseases in maize plants using advanced Artificial Intelligence such as Convolutional Neural Networks.
+          Detect diseases in plants using advanced Artificial Intelligence such as Convolutional Neural Networks.
         </p>
         <motion.button
           className="bg-gradient-to-r from-green-500 to-yellow-500 text-white px-8 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-xl transition duration-300"
@@ -47,7 +47,7 @@ function Home() {
       >
         <h1 className="text-4xl font-bold text-green-700">About</h1>
         <p className="text-lg max-w-[90%] text-left text-green-900">
-          Our web app leverages AI technology to identify diseases in maize leaf images,
+          Our web app leverages AI technology to identify diseases in leaf images,
           providing farmers with quick and accurate diagnosis. Improve crop health and
           increase yield with our easy-to-use tool.
         </p>
@@ -72,7 +72,7 @@ function Home() {
             <CloudUpload className="text-green-500 size-20 mb-4" />
             <h2 className="text-xl font-semibold text-green-700">Upload and Predict</h2>
             <p className="text-center text-green-900">
-              Easily upload maize leaf images and let our AI model analyze them for disease detection.
+              Easily upload leaf images and let our AI model analyze them for disease detection.
             </p>
           </motion.div>
 
